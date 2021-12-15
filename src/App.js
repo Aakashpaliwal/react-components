@@ -7,17 +7,19 @@ import ScrollToTop from "./components/Generic Components/ScrollToTop/ScrollToTop
 import ProgressContainer from "./components/Generic Components/progress/ProgressContainer";
 import UserProvider from "./components/UserContext";
 import ModalContainer from "./components/Generic Components/Modal/ModalContainer";
+import StepperContainer from "./components/Generic Components/Stepper/StepperContainer";
 
 function App() {
   return (
     <UserProvider>
-      <div className="App">
+      <div>
         {/* <Stopwatch /> */}
         {/* <Button /> */}
         {/* <CounterContainer /> */}
         {/* <ScrollToTop /> */}
         {/* <ProgressContainer /> */}
-        <ModalContainer />
+        {/* <ModalContainer /> */}
+        <StepperContainer />
       </div>
     </UserProvider>
   );
