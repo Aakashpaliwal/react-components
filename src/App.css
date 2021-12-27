@@ -38,3 +38,15 @@
     transform: rotate(360deg);
   }
 }
+.circle {
+  shape-outside: circle();
+  width: 500px;
+  height: 500px;
+  /* border: 10px solid purple; */
+  border-radius: 50%;
+  float: left;
+  background-color: #ccc;
+  /* opacity: 0.2; */
+  margin: 20px;
+  clip-path: circle();
+}
