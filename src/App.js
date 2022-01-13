@@ -24,6 +24,7 @@ import { getToken, onMessageListener } from "./components/Firebase";
 import { Button, Row, Col, Toast } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CommentBox from "./components/CommentBox/CommentBox";
+import Cards from "./components/Cards/Cards";
 // import Parent from "./Parent";
 
 // const Child = () => {
@@ -116,7 +117,8 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <Button onClick={() => setShow(true)}>Show Toast</Button>
         </header> */}
-        <CommentBox />
+        {/* <CommentBox /> */}
+        <Cards />
       </div>
     </UserProvider>
   );
