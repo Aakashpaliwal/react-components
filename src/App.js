@@ -23,6 +23,7 @@ import Login from "./components/Dashboard/Login";
 import { getToken, onMessageListener } from "./components/Firebase";
 import { Button, Row, Col, Toast } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CommentBox from "./components/CommentBox/CommentBox";
 // import Parent from "./Parent";
 
 // const Child = () => {
@@ -85,7 +86,7 @@ function App() {
           <Route path="/dashboard" exact element={<Dashboard />} />
           <Route path="/preference" exact element={<Preference />} />
         </Routes> */}
-        <Toast
+        {/* <Toast
           onClose={() => setShow(false)}
           show={show}
           delay={3000}
@@ -114,7 +115,8 @@ function App() {
           {!isTokenFound && <h1> Need notification permission ❗️ </h1>}
           <img src={logo} className="App-logo" alt="logo" />
           <Button onClick={() => setShow(true)}>Show Toast</Button>
-        </header>
+        </header> */}
+        <CommentBox />
       </div>
     </UserProvider>
   );
